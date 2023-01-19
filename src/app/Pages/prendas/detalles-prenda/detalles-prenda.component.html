@@ -5,6 +5,14 @@
             <p>{{miPrenda?.nombre}}</p>
             <p>Color: {{miPrenda?.color}}</p>
             <p>Precio {{miPrenda?.precio}}€</p>
+
+            <div class="detalles-buttons">
+                <button class="prenda-buttons" (click)="eliminarPrenda()">Eliminar</button>
+                <button  class="prenda-buttons" routerLink="/editarPrenda//{miPrenda._id}">Editar</button>
+            </div>
+
+            
+
         </div>
 
     </div>
@@ -16,10 +24,7 @@
     
     </div>
     
-    <div class="button-box">
-        <button class="prenda-buttons" (click)="eliminarPrenda()">Eliminar</button>
-        <button  class="prenda-buttons" routerLink="/editarPrenda//{miPrenda.id}">Editar</button>
-    </div>
+
 
 </div>
 

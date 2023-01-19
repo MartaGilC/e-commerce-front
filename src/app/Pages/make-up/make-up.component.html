@@ -1,8 +1,21 @@
-<button routerLink="/subirMaquillaje">Subir producto</button>
-<div *ngFor="let producto of miMaquillaje">
-    <p>{{producto?.nombre}}</p>
-    <img src="{{producto?.imagen}}" width="200px" alt="{{producto?.nombre}}">
-    <p>{{producto?.precio}}€</p>
+
+<div class="makeup-box">
+<div class="makeup-button">
+    <button routerLink="/subirMaquillaje">Subir</button>
+</div>
+
+<div  class="productos-box"> 
+
+    <div class="producto-box" *ngFor="let producto of miMaquillaje">
     
-    <button routerLink="/maquillaje/{{producto?._id}}" >Ver más</button>
+        <img src="{{producto?.imagen}}" width="200px" alt="{{producto?.nombre}}">
+        <p>{{producto?.nombre}}</p>
+        <p>{{producto?.precio}}€</p>
+        
+        <button class="detallesMakeup-button" routerLink="/maquillaje/{{producto?._id}}" >Ver más</button>
+    </div>
+</div>
+
+
+
 </div>

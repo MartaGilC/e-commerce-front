@@ -1,0 +1,41 @@
+.makeup-box{
+
+    .makeup-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button{
+            background-color: black;
+            color: white;
+            text-transform: uppercase;
+            cursor: pointer;
+            width: 130px;
+            height: 30px;
+            font-size: smaller;
+        }
+    }
+            
+    .productos-box{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+            .producto-box{
+                margin: 2em;
+                p{
+                    text-transform: uppercase;
+                    color: #808081 ;
+                    font-size: smaller;
+                }
+            }
+        .detallesMakeup-button{
+            width: 19em;
+            height: 3em;
+            background-color: transparent;
+            border: solid 1px;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+    }
+
+}

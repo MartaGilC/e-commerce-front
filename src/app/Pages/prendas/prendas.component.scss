@@ -3,11 +3,12 @@
     display: flex;
     justify-content: center;
     .crearPrenda-Button{
-        width: 10em;
-        height: 2em;
+        width: 130px;
+        height: 30px;
         background-color: black;
         color: white;
         text-transform: uppercase;
+        font-size: smaller;
         cursor: pointer;
     }
 }

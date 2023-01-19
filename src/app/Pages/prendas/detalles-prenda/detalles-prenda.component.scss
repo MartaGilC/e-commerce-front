@@ -23,7 +23,16 @@
             padding: 2em;
         }
     }
-    .button-box{
-
+    .detalles-buttons{
+        display: flex;
+            button{
+                background-color:black;
+                color: white;
+                width: 130px;
+                height: 30px;
+                margin-right: 1em;
+                text-transform: uppercase;
+                font-size: smaller;
+            }
     }
 }

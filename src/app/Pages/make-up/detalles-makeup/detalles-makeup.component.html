@@ -1,5 +1,15 @@
-<p>{{miProducto?.nombre}}</p>
-<img src="{{miProducto?.imagen}}" width="250px">
-<p>{{miProducto?.color}}</p>
-<p>{{miProducto?.precio}}</p>
-<button (click)="eliminarProducto()">Eliminar</button>
+<div class="firstMakeup-box">
+    <div class="imgMakeup-box">
+        <img src="{{miProducto?.imagen}}" width="250px">
+    </div>
+    
+    <div class="infoMakeup-box">
+        <p>{{miProducto?.nombre}}</p>
+        <p>{{miProducto?.color}}</p>
+        <p>{{miProducto?.precio}}</p>
+    </div>
+    <div class="buttonMakeup">
+        <button (click)="eliminarProducto()">Eliminar</button>
+    </div>
+    
+</div>
