@@ -1,0 +1,23 @@
+<form [formGroup]="prendasForm" (ngSubmit)="onSubmit()" >
+    <input type="text" formControlName="nombre">
+    <input type="number" formControlName="precio">
+    <input type="text" formControlName="color">
+    <select formControlName="tipo">
+        <option>Abrigo</option>
+        <option>Camisa</option>
+        <option>Pantalón</option>
+        <option>Vestido</option>
+        <option>Lenceria</option>
+    </select>
+    <select formControlName="talla">
+        <option>XS</option>
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+        <option>XXL</option>
+    </select>
+    <input type="file" formControlName="imagen" (change)="onFileChange($event)">
+    <button>Añadir</button>
+
+</form>

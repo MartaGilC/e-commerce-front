@@ -1,0 +1,8 @@
+<button routerLink="/subirMaquillaje">Subir producto</button>
+<div *ngFor="let producto of miMaquillaje">
+    <p>{{producto?.nombre}}</p>
+    <img src="{{producto?.imagen}}" width="200px" alt="{{producto?.nombre}}">
+    <p>{{producto?.precio}}€</p>
+    
+    <button routerLink="/maquillaje/{{producto?._id}}" >Ver más</button>
+</div>

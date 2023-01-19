@@ -1,0 +1,20 @@
+<form [formGroup]="maquillajeForm" (ngSubmit)="onSubmit()">
+    <select formControlName="nombre">
+        <option>pintalabios</option>
+        <option>sombra de ojos</option>
+        <option>colorete</option>
+        <option>iluminador</option>
+    </select>
+    <select formControlName="color">
+        <option>rojo</option>
+        <option>rosa</option>
+        <option>marrón</option>
+        <option>azul</option>
+        <option>morado</option>
+    </select>
+    <input type="number" formControlName="precio">
+    <input type="text" formControlName="imagen">
+
+    <button>Añadir</button>
+
+</form>

@@ -1,0 +1,9 @@
+
+<button routerLink="/subirPrenda">Crear</button>
+<div *ngFor= "let prenda of misPrendas" >
+    <p>{{prenda?.nombre}}</p>
+    <img src="{{prenda?.imagen}}" width="250">
+    <p>{{prenda?.precio}}€</p>
+    
+    <button routerLink="/prendas/{{prenda?._id}}">Ver más</button>
+</div>

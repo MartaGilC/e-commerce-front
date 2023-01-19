@@ -1,0 +1,6 @@
+<p>{{miPrenda?.nombre}}</p>
+<img src="{{miPrenda?.imagen}}" alt="{{miPrenda?.tipo}}" width="300"/>
+<p>Color: {{miPrenda?.color}}</p>
+<p>Precio {{miPrenda?.precio}}€</p>
+<button (click)="eliminarPrenda()">Eliminar</button>
+<button routerLink="/editarPrenda//{miPrenda.id}">Editar</button>
