@@ -1,6 +1,25 @@
-<p>{{miPrenda?.nombre}}</p>
-<img src="{{miPrenda?.imagen}}" alt="{{miPrenda?.tipo}}" width="300"/>
-<p>Color: {{miPrenda?.color}}</p>
-<p>Precio {{miPrenda?.precio}}€</p>
-<button (click)="eliminarPrenda()">Eliminar</button>
-<button routerLink="/editarPrenda//{miPrenda.id}">Editar</button>
+<div class="firstBox-detallesPrenda">
+
+    <div class="infoPrendas-box">
+        <div class="secondInfoPrendas-box">
+            <p>{{miPrenda?.nombre}}</p>
+            <p>Color: {{miPrenda?.color}}</p>
+            <p>Precio {{miPrenda?.precio}}€</p>
+        </div>
+
+    </div>
+    
+    <div class="img-box">
+        <img src="{{miPrenda?.imagen}}" alt="{{miPrenda?.tipo}}" width="300"/>
+        <img src="{{miPrenda?.imagen1}}" alt="{{miPrenda?.tipo}}" width="300"/>
+        <img src="{{miPrenda?.imagen2}}" alt="{{miPrenda?.tipo}}" width="300"/>
+    
+    </div>
+    
+    <div class="button-box">
+        <button class="prenda-buttons" (click)="eliminarPrenda()">Eliminar</button>
+        <button  class="prenda-buttons" routerLink="/editarPrenda//{miPrenda.id}">Editar</button>
+    </div>
+
+</div>
+

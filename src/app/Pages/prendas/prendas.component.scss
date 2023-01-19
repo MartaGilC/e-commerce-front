@@ -1,0 +1,52 @@
+.crearPrendabutton-box{
+
+    display: flex;
+    justify-content: center;
+    .crearPrenda-Button{
+        width: 10em;
+        height: 2em;
+        background-color: black;
+        color: white;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+}
+
+.first-Prenda-box{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    .prenda-Box{
+        display: flex;
+        flex-direction: column;
+        padding: 2em;
+        .info-prendas{
+            
+            p{
+                text-transform: uppercase;
+                font-size: smaller;
+                color: #808081;
+
+            }
+            .p-precio{
+                text-transform: uppercase;
+                font-size: smaller;
+                padding-left: 4px;
+                color: #808081;
+            }
+
+        }
+
+        .verMasPrendas-Button{
+            width: 19em;
+            height: 3em;
+            background-color: transparent;
+            border: solid 1px;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+    }
+}

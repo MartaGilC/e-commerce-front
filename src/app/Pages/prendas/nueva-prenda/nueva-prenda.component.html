@@ -1,23 +1,50 @@
-<form [formGroup]="prendasForm" (ngSubmit)="onSubmit()" >
-    <input type="text" formControlName="nombre">
-    <input type="number" formControlName="precio">
-    <input type="text" formControlName="color">
-    <select formControlName="tipo">
-        <option>Abrigo</option>
-        <option>Camisa</option>
-        <option>Pantalón</option>
-        <option>Vestido</option>
-        <option>Lenceria</option>
-    </select>
-    <select formControlName="talla">
-        <option>XS</option>
-        <option>S</option>
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-    </select>
-    <input type="text" formControlName="imagen">
-    <button>Añadir</button>
+<form class="nuevaPrenda-Form" [formGroup]="prendasForm" (ngSubmit)="onSubmit()" >
+    <div class="box-nuevaPrenda">
+        <label>Nombre</label>
+        <input class="nuevaPrenda-input" type="text" formControlName="nombre">
+    </div>
+    
+    <div class="box-nuevaPrenda">
+        <label>Precio</label>
+        <input class="nuevaPrenda-input" type="number" formControlName="precio">
+    </div>
+    
+    <div class="box-nuevaPrenda">
+        <label>Color</label>
+        <input class="nuevaPrenda-input" type="text" formControlName="color">
+    </div>
+    
+    <div class="box-nuevaPrenda">
+        <label>Tipo</label>
+        <select class="nuevaPrenda-select" formControlName="tipo">
+            <option>Abrigo</option>
+            <option>Camisa</option>
+            <option>Pantalón</option>
+            <option>Vestido</option>
+            <option>Lenceria</option>
+        </select>
+    </div>
+    <div class="box-nuevaPrenda">
+        <label>Talla</label>
+        <select class="nuevaPrenda-select" formControlName="talla">
+    
+            <option>XS</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+            <option>XXL</option>
+        </select>
+    </div>
+    <div class="box-nuevaPrenda">
+        <label>Imágenes</label>
+    <input class="nuevaPrenda-input" type="text" formControlName="imagen">
+    <input class="nuevaPrenda-input" type="text" formControlName="imagen1">
+    <input class="nuevaPrenda-input" type="text" formControlName="imagen2">
+    </div>
+    <div class="buttonNuevaPrenda-box">
+        <button>Añadir</button>
+    </div>
+    
 
 </form>

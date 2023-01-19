@@ -1,0 +1,29 @@
+.firstBox-detallesPrenda{
+    display: grid;
+    grid-template-columns: auto auto;
+
+    .infoPrendas-box{
+        display: flex;
+        flex-direction: column;
+        padding-top: 25em;
+        .secondInfoPrendas-box{
+            height: 30%;
+        border: solid 1px;
+        display: flex;
+            flex-direction: column;
+        justify-content: center;
+        margin-left: 2em;
+        padding-left: 2em;
+        }
+    }
+    .img-box{
+        display: flex;
+        flex-direction: column;
+        img{
+            padding: 2em;
+        }
+    }
+    .button-box{
+
+    }
+}

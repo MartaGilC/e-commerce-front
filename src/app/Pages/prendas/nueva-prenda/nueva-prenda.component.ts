@@ -14,7 +14,9 @@ export class NuevaPrendaComponent implements OnInit{
     color:"",
     precio:"", 
     talla:"", 
-    imagen:"" 
+    imagen:"",
+    imagen1:"",
+    imagen2: ""
   };
 
   prendasForm!: FormGroup
@@ -29,6 +31,8 @@ export class NuevaPrendaComponent implements OnInit{
       precio:["",[Validators.required]],
       talla:["",[Validators.required]],
       imagen:["",[Validators.required]],
+      imagen1:["",[]],
+      imagen2:["",[]]
 
 
     })

@@ -1,9 +1,20 @@
 
-<button routerLink="/subirPrenda">Crear</button>
-<div *ngFor= "let prenda of misPrendas" >
-    <p>{{prenda?.nombre}}</p>
-    <img src="{{prenda?.imagen}}" width="250">
-    <p>{{prenda?.precio}}€</p>
+<div class="crearPrendabutton-box">
+    <button class="crearPrenda-Button" routerLink="/subirPrenda">Crear</button>
+</div>
+
+<div class="first-Prenda-box">
+    <div class="prenda-Box" *ngFor= "let prenda of misPrendas" >
+
+        <img src="{{prenda?.imagen}}" width="250">
+        <div class="info-prendas">
+            <p>{{prenda?.nombre}}</p>
+            <p class="p-precio">{{prenda?.precio}}€</p>
+        </div>
+
+
+        
+        <button class="verMasPrendas-Button" routerLink="/prendas/{{prenda?._id}}">Ver más</button>
+    </div>
     
-    <button routerLink="/prendas/{{prenda?._id}}">Ver más</button>
 </div>
