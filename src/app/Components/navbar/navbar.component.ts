@@ -1,3 +1,4 @@
+import { UsersService } from './../../Services/users.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit{
   public active: boolean = false;
-    constructor(){}
+    constructor(public userService: UsersService){}
 
     ngOnInit(): void {
-      
+      this.userService.isLogged();
+    }
+    logout(){
+      this.userService.logout();
     }
     setActive(): void{
       this.active = !this.active

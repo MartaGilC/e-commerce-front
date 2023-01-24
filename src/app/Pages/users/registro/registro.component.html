@@ -1,11 +1,20 @@
-<form [formGroup]="usuariosForm" (ngSubmit)="onSubmit()">
+<form class="register-form" [formGroup]="usuariosForm" (ngSubmit)="onSubmit()">
+<div class="register-div">
+    <label>Nombre</label>
+    <input class="register-input" type="text" formControlName="nombre">
+    <label>Apellidos</label>
+    <input class="register-input" type="text" formControlName="apellidos">
+    <label>Email</label>
+    <input class="register-input" type="email" formControlName="correo">
+    <label>Contraseña</label>
+    <input class="register-input" type="password" formControlName="password">
+    <label>Fecha de nacimiento</label>
+    <input class="register-input" type="date" formControlName="nacimiento">
+    <label>Imagen</label>
+    <input class="register-input" type="text" formControlName="imagen">
+    <button class="register-button">Registrar</button>
+</div>
 
-<input type="text" formControlName="nombre">
-<input type="text" formControlName="apellidos">
-<input type="email" formControlName="correo">
-<input type="password" formControlName="password">
-<input type="date" formControlName="nacimiento">
-<input type="text" formControlName="imagen">
-<button>Registrarse</button>
+
 </form>
 

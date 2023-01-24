@@ -10,6 +10,9 @@
         <a class="a" routerLink="/">Home</a>
         <a class="a" routerLink="/maquillaje">Maquillaje</a>
         <a class="a" routerLink="/prendas">Ropa</a>
+        <a class="a" *ngIf="!userService.isLoggedIn" routerLink="/registro">Registro</a>
+        <a class="a" *ngIf="!userService.isLoggedIn" routerLink="/login">Inicia sesión</a>
+        <button *ngIf="userService.isLoggedIn" (click)="logout()">Logout</button>
     </div>
 
     <div class="input-box">
