@@ -1,20 +1,42 @@
 <form [formGroup]="maquillajeForm" (ngSubmit)="onSubmit()">
-    <select formControlName="nombre">
-        <option>pintalabios</option>
-        <option>sombra de ojos</option>
-        <option>colorete</option>
-        <option>iluminador</option>
-    </select>
-    <select formControlName="color">
-        <option>rojo</option>
-        <option>rosa</option>
-        <option>marrón</option>
-        <option>azul</option>
-        <option>morado</option>
-    </select>
-    <input type="number" formControlName="precio">
-    <input type="text" formControlName="imagen">
+    <div  class="NuevoProducto-box">
+        <label>Tipo</label>
+        <select class="NuevoProducto-select" formControlName="nombre">
+            <option>pintalabios</option>
+            <option>bronceador</option>
+            <option>sombra de ojos</option>
+            <option>colorete</option>
+            <option>iluminador</option>
+        </select>
+    </div>
+    <div  class="NuevoProducto-box">
+        <label>Marca</label>
+        <input class="nuevoProducto-input" type="text" formControlName="marca">
+    </div>
+    <div  class="NuevoProducto-box">
+        <label>Color</label>
+        <select  class="NuevoProducto-select" formControlName="color">
+            <option>rojo</option>
+            <option>rosa</option>
+            <option>marrón</option>
+            <option>azul</option>
+            <option>morado</option>
+        </select>
+    </div>
+    <div  class="NuevoProducto-box">
+        <label>Precio</label>
+        <input class="nuevoProducto-input"  type="number" formControlName="precio">
+    </div>
+    <div  class="NuevoProducto-box">
+        <label>Imágenes</label>
+        <input class="nuevoProducto-input"  type="text" formControlName="imagen">
+        <input class="nuevoProducto-input"  type="text" formControlName="imagen1">
+        <input class="nuevoProducto-input"  type="text" formControlName="imagen2">
+    
+    </div>
+    <div class="buttonNuevoProducto-box">
+        <button>Añadir</button>
+    </div>
 
-    <button>Añadir</button>
 
 </form>

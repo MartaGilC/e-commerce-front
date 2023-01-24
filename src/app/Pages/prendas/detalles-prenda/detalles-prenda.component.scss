@@ -3,9 +3,20 @@
     grid-template-columns: auto auto;
 
     .infoPrendas-box{
+        .button-atras{
+            display: flex;
+            justify-content: flex-end;
+            button{
+                background-color: transparent;
+                border: 0px;
+            }
+        }
         display: flex;
         flex-direction: column;
         padding-top: 25em;
+        color: #808081;
+        text-transform: uppercase;
+        font-size: smaller;
         .secondInfoPrendas-box{
             height: 30%;
         border: solid 1px;

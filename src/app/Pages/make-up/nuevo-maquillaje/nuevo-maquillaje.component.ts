@@ -13,9 +13,12 @@ import { Route, Router } from '@angular/router';
 export class NuevoMaquillajeComponent implements OnInit{
   nuevoProducto: any= {
     nombre:"",
+    marca:"",
     color:"",
     precio:"",
-    imagen:""
+    imagen:"",
+    imagen1:"",
+    imagen2:""
   };
   maquillajeForm!: FormGroup;
   
@@ -26,9 +29,12 @@ export class NuevoMaquillajeComponent implements OnInit{
   ngOnInit(): void {
     this.maquillajeForm = this.formBuilder.group({
       nombre:["",[Validators.required]],
+      marca:[""],
       color:["",[Validators.required]],
       precio:["",[Validators.required]],
       imagen:["",[Validators.required]],
+      imagen1:[""],
+      imagen2:[""]
     })
     this.maquillajeForm.valueChanges.subscribe((changes) => {
       this.nuevoProducto = changes;

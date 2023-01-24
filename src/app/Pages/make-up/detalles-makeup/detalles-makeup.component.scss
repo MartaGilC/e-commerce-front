@@ -1,6 +1,45 @@
 .firstMakeup-box{
+    display: grid;
+    grid-template-columns: auto auto;
+    .infoMakeup-box{
+        .button-atras{
+            display: flex;
+            justify-content: flex-end;
+            
+            button{
+                background-color: transparent;
+                border: 0px;
+                cursor: pointer;
+            }
+        }
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        padding-top: 25em;
+        color: #808081;
+        font-size: smaller;
+}
+        .dd{
+            margin-left: 2em;
+            padding-left: 2em;
+            height: 30%;
+            border: solid 1px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
 
+    }
 
+    .imgMakeup-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img{
+            margin: 2em;
+        }
+    }
     .buttonMakeup{
         button{
             background: black;
@@ -11,4 +50,3 @@
             font-size: smaller;
         }
     }
-}

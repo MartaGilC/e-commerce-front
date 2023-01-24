@@ -1,15 +1,26 @@
 <div class="firstMakeup-box">
+
+    <div class="infoMakeup-box">
+        <div class="button-atras">
+            <button routerLink="/maquillaje"> <img src="https://img.icons8.com/small/512/return.png" width="20px"></button>
+        </div>
+        <div class="dd">
+            <p>{{miProducto?.nombre}} {{miProducto?.marca}}</p>
+            <p>Color: {{miProducto?.color}}</p>
+            <p>{{miProducto?.precio}}€</p>
+            
+        <div class="buttonMakeup">
+            <button (click)="eliminarProducto()">Eliminar</button>
+        </div>
+        </div>
+
+    </div>
+
     <div class="imgMakeup-box">
         <img src="{{miProducto?.imagen}}" width="250px">
+        <img src="{{miProducto?.imagen1}}" width="250px">
+        <img src="{{miProducto?.imagen2}}" width="250px">
     </div>
-    
-    <div class="infoMakeup-box">
-        <p>{{miProducto?.nombre}}</p>
-        <p>{{miProducto?.color}}</p>
-        <p>{{miProducto?.precio}}</p>
-    </div>
-    <div class="buttonMakeup">
-        <button (click)="eliminarProducto()">Eliminar</button>
-    </div>
+
     
 </div>

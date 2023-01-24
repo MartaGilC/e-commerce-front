@@ -8,8 +8,8 @@
 
     <div class="producto-box" *ngFor="let producto of miMaquillaje">
     
-        <img src="{{producto?.imagen}}" width="200px" alt="{{producto?.nombre}}">
-        <p>{{producto?.nombre}}</p>
+        <img src="{{producto?.imagen}}" alt="{{producto?.nombre}}">
+        <p>{{producto?.nombre}}  {{producto?.marca}}</p>
         <p>{{producto?.precio}}€</p>
         
         <button class="detallesMakeup-button" routerLink="/maquillaje/{{producto?._id}}" >Ver más</button>

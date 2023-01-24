@@ -1,0 +1,11 @@
+<form [formGroup]="usuariosForm" (ngSubmit)="onSubmit()">
+
+<input type="text" formControlName="nombre">
+<input type="text" formControlName="apellidos">
+<input type="email" formControlName="correo">
+<input type="password" formControlName="password">
+<input type="date" formControlName="nacimiento">
+<input type="text" formControlName="imagen">
+<button>Registrarse</button>
+</form>
+

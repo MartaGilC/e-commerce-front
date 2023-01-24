@@ -1,3 +1,5 @@
+import { LoginComponent } from './Pages/users/login/login.component';
+import { RegistroComponent } from './Pages/users/registro/registro.component';
 import { NuevoMaquillajeComponent } from './Pages/make-up/nuevo-maquillaje/nuevo-maquillaje.component';
 import { BuscadorComponent } from './Components/buscador/buscador.component';
 import { EditarPrendaComponent } from './Pages/prendas/editar-prenda/editar-prenda.component';
@@ -19,7 +21,9 @@ const routes: Routes = [
   {path:"prendas/:id", component: DetallesPrendaComponent},
   {path:"subirPrenda", component: NuevaPrendaComponent},
   {path:"editarPrenda/:id", component: EditarPrendaComponent},
-  {path: "buscador", component: BuscadorComponent}
+  {path: "buscador", component: BuscadorComponent},
+  {path:"registro", component: RegistroComponent},
+  {path:"login", component: LoginComponent}
 ];
 
 @NgModule({

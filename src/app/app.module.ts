@@ -19,6 +19,9 @@ import { MatInputModule } from '@angular/material/input';
 import { BuscadorPipe } from './pipes/buscador.pipe';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NuevoMaquillajeComponent } from './Pages/make-up/nuevo-maquillaje/nuevo-maquillaje.component';
+import { UsersComponent } from './Pages/users/users.component';
+import { RegistroComponent } from './Pages/users/registro/registro.component';
+import { LoginComponent } from './Pages/users/login/login.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,10 @@ import { NuevoMaquillajeComponent } from './Pages/make-up/nuevo-maquillaje/nuevo
     EditarPrendaComponent,
     BuscadorComponent,
     BuscadorPipe,
-    NuevoMaquillajeComponent
+    NuevoMaquillajeComponent,
+    UsersComponent,
+    RegistroComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

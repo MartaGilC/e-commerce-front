@@ -1,0 +1,111 @@
+.home-box{
+
+    .beauty-box{
+        display: flex;
+        justify-content: end;
+        .img-paula{
+                cursor: pointer;
+                width: 50%;
+            }
+                .img-paula:hover{
+            filter: opacity(.7);
+            transition:all .5s ease-in-out
+        }
+                .info-beauty{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            h4{
+                border-bottom: solid 1px;
+                text-transform: uppercase;
+            }
+            p{
+                width: 56%;
+            }
+        }
+        }
+
+
+
+        @media (max-width: 450px) {
+            .beauty-box{
+                            .img-paula{
+                position: relative;
+                width: 100%;
+
+            }
+            .info-beauty{
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                color: whitesmoke;
+                h4{
+                    text-transform: uppercase;
+                    border-bottom: solid 5px;
+                }
+                p{
+                width: 55%;
+                }
+            }
+            }
+
+    }
+
+
+    @media (max-width: 360px) {
+                    .img-paula{
+                position: relative;
+                width: 100%;
+
+            }
+        
+    }
+    }
+
+
+
+
+    .beauty-box2{
+                display: flex;
+                .img-luzmi{
+                cursor: pointer;
+                width: 50%;
+        }
+                .img-luzmi:hover{
+            filter: opacity(.7);
+            transition:all .5s ease-in-out
+        }
+        .moreInfo-beauty{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            h4{
+                border-bottom: solid 1px;
+            }
+            p{
+                width: 56%;
+            }
+                }
+    }
+    @media (max-width:450px) {
+        .beauty-box2{
+            .moreInfo-beauty{
+                display: flex;
+                flex-direction: column;
+                height: 94%;
+                color: whitesmoke;
+                position: absolute;
+            }
+            
+            .img-luzmi{
+                width: 100%;
+                position: relative;
+            }
+        }
+
+    }
