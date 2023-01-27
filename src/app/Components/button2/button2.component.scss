@@ -1,0 +1,14 @@
+.makeup-button{
+    padding-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .button-makeup{
+    width: 130px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-size: smaller;
+    cursor: pointer;
+}}

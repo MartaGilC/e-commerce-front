@@ -1,3 +1,4 @@
+import { UsersService } from './../../Services/users.service';
 import { HttpClient } from '@angular/common/http';
 import { PrendasService } from './../../Services/prendas.service';
 import { Component, OnInit } from '@angular/core';
@@ -8,24 +9,27 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./prendas.component.scss']
 })
 export class PrendasComponent implements OnInit{
-
+  public active: boolean = false;
   misPrendas?: any[]
 
   handleSearch(value:string){
     this.filtro_valor = value;
   }
   filtro_valor = ""
-  constructor(private prendasService: PrendasService, private http: HttpClient)
+  constructor(private prendasService: PrendasService, private http: HttpClient, private userService: UsersService)
   {
     this.prendasService.obtenerPrendas().subscribe((data:any) => 
     {console.log(data);
     this.misPrendas = [...data]})
   }
+  
 
   ngOnInit(): void {
     this.http.get("http://localhost:3000/ropa").subscribe(
       (ropa: any[]) => this.prendas = ropa
-    )
+    );
+    
   }
   prendas = []
+  
 }

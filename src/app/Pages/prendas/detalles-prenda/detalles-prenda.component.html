@@ -6,10 +6,10 @@
         </div>
         <div class="secondInfoPrendas-box">
             <p>{{miPrenda?.nombre}}</p>
-            <p>Color: {{miPrenda?.color}}</p>
-            <p>Precio {{miPrenda?.precio}}€</p>
+            <p>{{miPrenda?.color}}</p>
+            <p>{{miPrenda?.precio}}€</p>
 
-            <div class="detalles-buttons">
+            <div *ngIf="userService.isLoggedIn" class="detalles-buttons">
                 <button class="prenda-buttons" (click)="eliminarPrenda()">Eliminar</button>
                 <button  class="prenda-buttons" routerLink="/editarPrenda//{miPrenda._id}">Editar</button>
             </div>

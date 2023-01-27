@@ -2,7 +2,9 @@
     display: flex;
     justify-content: space-around;
     padding: 1em;
-
+    box-shadow: 2px 0 15px rgb(0 0 0 / 20%);
+    position: sticky;
+    top: -1px;
     .nav{
         display: flex;
         width: 50%;
@@ -17,17 +19,20 @@
             align-items: center;
             overflow: hidden;
             pointer-events: none;
-
+            transition: left 1s;
             &--active{
                 height: 50vh;
                 flex-direction: column;
                 pointer-events: auto;
+                transition: left 1s;
             }
         }
 
         .a{
         text-decoration: none;
         color: black;
+        text-transform: uppercase;
+        font-size: smaller;
             
 
         @media screen and (max-width:480px){
@@ -36,12 +41,20 @@
     }
 
     .a:hover{
-        color:rgb(31, 30, 30);
+        color:rgb(168,70,34) ;
 
         
     }
     }
-
+    .logout-button{
+        background-color: transparent;
+        border: solid 1px;
+        color: black;
+        height: 2em;
+        width:  15em;
+        text-transform: uppercase;
+        font-size: smaller;
+    }
     .input-box{
 
         .search-span{

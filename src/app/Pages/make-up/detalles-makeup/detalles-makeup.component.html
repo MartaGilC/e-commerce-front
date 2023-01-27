@@ -9,7 +9,7 @@
             <p>Color: {{miProducto?.color}}</p>
             <p>{{miProducto?.precio}}€</p>
             
-        <div class="buttonMakeup">
+        <div *ngIf="userService.isLoggedIn" class="buttonMakeup">
             <button (click)="eliminarProducto()">Eliminar</button>
         </div>
         </div>

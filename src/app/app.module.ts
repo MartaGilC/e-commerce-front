@@ -22,6 +22,10 @@ import { NuevoMaquillajeComponent } from './Pages/make-up/nuevo-maquillaje/nuevo
 import { UsersComponent } from './Pages/users/users.component';
 import { RegistroComponent } from './Pages/users/registro/registro.component';
 import { LoginComponent } from './Pages/users/login/login.component';
+import { FooterComponent } from './Components/footer/footer.component';
+import { AboutmeComponent } from './Pages/aboutme/aboutme.component';
+import { ButtonComponent } from './Components/button/button.component';
+import { Button2Component } from './Components/button2/button2.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +43,11 @@ import { LoginComponent } from './Pages/users/login/login.component';
     NuevoMaquillajeComponent,
     UsersComponent,
     RegistroComponent,
-    LoginComponent
+    LoginComponent,
+    FooterComponent,
+    AboutmeComponent,
+    ButtonComponent,
+    Button2Component
   ],
   imports: [
     BrowserModule,

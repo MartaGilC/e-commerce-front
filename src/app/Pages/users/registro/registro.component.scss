@@ -1,12 +1,35 @@
 .register-form{
+    .datos-personales{
+        height: 9em;
+        display: flex;
+        justify-content: space-around;
+        align-items: end;
+        p{
+            text-transform: uppercase;
+            font-weight:500;
+        }
+    }
     .register-div{
         display: flex;
         flex-direction: column;
         align-items: center;
         border: solid 1px;
-        margin: 10em;
+        margin: 3em;
         padding: 2em;
-        
+        @media screen and (max-width: 450px) {
+            border: 0;
+        }
+        label{
+            text-transform: uppercase;
+            font-size: smaller;
+        }
+        .register-input{
+            padding: 1em 1em 1em 0.5em;
+            display: block;
+            width: 19em;
+            border: none;
+            border-bottom: 1px solid #757575;
+        }
             button{
                 background-color: black;
                 color: white;

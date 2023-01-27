@@ -1,4 +1,8 @@
 <form class="register-form" [formGroup]="usuariosForm" (ngSubmit)="onSubmit()">
+    <div class="datos-personales">
+        <p>Datos personales</p>
+    </div>
+
 <div class="register-div">
     <label>Nombre</label>
     <input class="register-input" type="text" formControlName="nombre">
@@ -17,4 +21,5 @@
 
 
 </form>
+<app-footer></app-footer>
 

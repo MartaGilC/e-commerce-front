@@ -6,6 +6,9 @@ form{
     border: solid 1px;
     margin: 10em;
     padding: 2em;
+    @media screen and (max-width:450px) {
+        border: 0;
+    }
     .NuevoProducto-box{
         display: flex;
         flex-direction: column;

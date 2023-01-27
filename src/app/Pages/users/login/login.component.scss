@@ -1,19 +1,73 @@
-.login-form{
+.login-box{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: solid 1px;
-    margin: 10em;
-    padding: 2em;
-    
-    button{
-        background-color: black;
-        color: white;
-        height: 2em;
-        width: 12.899em;
-        margin-top: 1em;
-        margin-bottom: 0.5em;
-        text-transform: uppercase;
-        font-size: smaller;
+    @media screen and (max-width: 450px) {
+        display: flex;
+        flex-direction: column;
+    }
+    .login-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: solid 1px;
+        margin: 10em;
+        padding: 2em;
+
+        @media screen and (max-width: 450px) {
+            justify-content: center;
+            align-items: center;
+            border: 0;
+
+        }
+        label{
+            text-transform: uppercase;
+            font-size: smaller;
+        }
+        .input-form{
+        padding: 1em 1em 1em 0.5em;
+        width: 19em;
+        border: none;
+        border-bottom: 1px solid #757575;
+        @media screen and (max-width: 450px) {
+            width: 20em;
+        }
+        }
+        button{
+            background-color: black;
+            color: white;
+            height: 2em;
+            width: 12.899em;
+            margin-top: 1em;
+            margin-bottom: 0.5em;
+            text-transform: uppercase;
+            font-size: smaller;
+        }
+    }
+    .register2-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @media screen and (max-width: 450px) {
+            align-items: center;
+            padding-bottom: 10em;
+        }
+        .button-registro{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            background-color: transparent;
+            height: 3em;
+            width: 23em;
+            border: solid 0.5px;
+            margin-top: 1em;
+            margin-bottom: 0.5em;
+            text-transform: uppercase;
+            font-size: smaller;
+            text-decoration: none;
+        }
+        p{
+            text-transform: uppercase;
+            font-size: smaller;
+        }
     }
 }

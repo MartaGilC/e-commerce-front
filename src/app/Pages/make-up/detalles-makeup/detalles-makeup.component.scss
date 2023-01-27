@@ -38,6 +38,9 @@
 
         img{
             margin: 2em;
+            @media screen and (max-width:450px) {
+                width: 12em;
+            }
         }
     }
     .buttonMakeup{
