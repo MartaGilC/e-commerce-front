@@ -26,18 +26,18 @@ export class UsersService {
   }
 
   public checkSession(){
-    return this.http.get('http://localhost:3000/usuarios/checksession').pipe(
+    return this.http.get('https://e-commerce-back-45ny-cy8pxz1xz-martagilc.vercel.app/usuarios/checksession').pipe(
       catchError(this.handleError)
     )
   }
 
 
   public registrar(nuevoUsuario:any){
-    return this.http.post("http://localhost:3000/usuarios/create", nuevoUsuario);
+    return this.http.post("https://e-commerce-back-45ny-cy8pxz1xz-martagilc.vercel.app/usuarios/create", nuevoUsuario);
   }
 
   public login(usuario:any){
-    return this.http.post("http://localhost:3000/usuarios/login", usuario)
+    return this.http.post("https://e-commerce-back-45ny-cy8pxz1xz-martagilc.vercel.app/usuarios/login", usuario)
   }
 
   public logout(){

@@ -9,15 +9,15 @@ export class MakeUpService {
 
   constructor(private http: HttpClient) { }
   public obtenerMaquillaje(): Observable<any>{
-    return this.http.get("http://localhost:3000/maquillaje");
+    return this.http.get("https://e-commerce-back-45ny-cy8pxz1xz-martagilc.vercel.app/maquillaje");
   }
   public obtenerProducto(id: string): Observable<any>{
-    return this.http.get("http://localhost:3000/maquillaje/" + id);
+    return this.http.get("https://e-commerce-back-45ny-cy8pxz1xz-martagilc.vercel.app/maquillaje/" + id);
   }
   public crearProducto(nuevoProducto:any){
-    return this.http.post("http://localhost:3000/maquillaje/create", nuevoProducto);
+    return this.http.post("https://e-commerce-back-45ny-cy8pxz1xz-martagilc.vercel.app/maquillaje/create", nuevoProducto);
   }
   public eliminarProducto(id:string){
-    return this.http.delete("http://localhost:3000/maquillaje/delete/"+ id)
+    return this.http.delete("https://e-commerce-back-45ny-cy8pxz1xz-martagilc.vercel.app/maquillaje/delete/"+ id)
   }
 }
